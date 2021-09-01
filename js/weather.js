@@ -29,7 +29,7 @@ const tempareture = data => {
     } else {
 
         const div = document.createElement('div');
-        div.innerHTML = `  <img src="https://openweathermap.org/img/wn/${data.weather[0].icon}" alt="">
+        div.innerHTML = `  <img src="https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" alt="">
             <h1 id="city-name">${data.name}</h1>
             <h3><span id="tempa">${data.main.temp}</span>&deg;C</h3>
             <h1 id="weather-status" class="lead">${data.weather[0].main}</h1>`
